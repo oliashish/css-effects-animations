@@ -5,11 +5,10 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
     const effects = [
-        "Baffle Effect",
+        "Glassomorphism",
         "Card Flip",
         "Controlable Image Transition",
         "Distortion",
-        "Glassomorphism",
         "Gradient Movement",
         "Neon Effect",
         "Image Reflection",
@@ -37,11 +36,16 @@ const Home = () => {
                     alt="Ashish Oli"
                 ></img>
             </div>
-            <p className="disclaimer-para">Don't judge too quickly, The real effects are waiting in.</p>
+            <p className="disclaimer-para">
+                Don't judge too quickly, The real effects are waiting in.
+            </p>
             <div className="card-container">
                 {effects.map((effect) => {
                     return (
-                        <Link to={effect} className="wrapper-link">
+                        <Link
+                            to={effect.toLowerCase()}
+                            className="wrapper-link"
+                        >
                             <div className="card">{effect}</div>
                         </Link>
                     );

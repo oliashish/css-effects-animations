@@ -1,0 +1,87 @@
+.main-container-class {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    margin: 0 auto;
+    background: rgb(233, 221, 55);
+}
+
+.card-flip-effect-container {
+    background-color: transparent;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    perspective: 1500px;
+}
+.card-flip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.card-flip-effect-container:hover .card-flip {
+    transform: rotateX(180deg);
+}
+
+.card-front-image,
+.card-back-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+.card-front-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.image-over-text {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    transform: translate(-2%, -20%);
+}
+.image-over-text h2 {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(0, 0, 0);
+}
+.card-front-image {
+    background-color: darkblue;
+    color: black;
+}
+
+.card-back-text {
+    border-radius: 20x;
+    background-color: #022b46;
+    color: white;
+    transform: rotateX(-180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card-back-text h3 {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+}
+.card-back-text p {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: "Arvo", serif;
+}
+
+.link {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: darkblue;
+    background: white;
+}
