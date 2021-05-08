@@ -1,4 +1,3 @@
-
 .glassomorphism {
     min-height: 100vh;
     display: flex;
@@ -72,4 +71,11 @@
     font-size: 15px;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 600px) {
+    .glass-card {
+        width: 80%;
+        margin: auto;
+    }
 }
