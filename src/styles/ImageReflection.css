@@ -1,0 +1,56 @@
+.image-reflection-container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(173, 173, 173),
+        rgb(255, 255, 255)
+    );
+    position: relative;
+    border: none;
+}
+.image-container {
+    position: absolute;
+    margin-top: 80px;
+    width: 300px;
+    height: 400px;
+    background: url("../images//pup.jpeg");
+    background-size: cover;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 50px 70px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.image-container::after {
+    content: "";
+    background-image: inherit;
+    height: 50%;
+    width: inherit;
+    position: absolute;
+    top: 101%;
+    left: 0%;
+    border: none;
+    transform: scaleY(-1);
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+    opacity: 0.5;
+}
+.image-container::before {
+    content: "";
+    height: 50%;
+    width: inherit;
+    border: none;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(199, 199, 199, 0.4),
+        rgb(255, 255, 255)
+    );
+    z-index: 1;
+}

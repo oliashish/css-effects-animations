@@ -4,6 +4,7 @@ import "./App.css";
 import CardFlip from "./components/CardFlip";
 import Glassomorphism from "./components/Glassomorphism";
 import Home from "./components/Home";
+import ImageReflection from "./components/ImageReflection";
 
 function App() {
     return (
@@ -16,6 +17,11 @@ function App() {
                     component={Glassomorphism}
                 />
                 <Route exact path="/card flip" component={CardFlip} />
+                <Route
+                    exact
+                    path="/image reflection"
+                    component={ImageReflection}
+                />
             </Switch>
         </div>
     );
