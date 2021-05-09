@@ -5,6 +5,7 @@ import CardFlip from "./components/CardFlip";
 import Glassomorphism from "./components/Glassomorphism";
 import Home from "./components/Home";
 import ImageReflection from "./components/ImageReflection";
+import Neuomorphism from "./components/Neuomorphism";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                     path="/image reflection"
                     component={ImageReflection}
                 />
+                <Route exact path="/neuomorphism" component={Neuomorphism} />
             </Switch>
         </div>
     );
