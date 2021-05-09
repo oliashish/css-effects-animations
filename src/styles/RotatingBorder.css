@@ -1,0 +1,44 @@
+.rotating-border-effect-container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgb(51, 165, 241), rgb(255, 9, 9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.border-box {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    border-radius: 5px;
+
+    border: 3px solid white;
+    background: linear-gradient(45deg, rgb(25, 135, 190), rgb(183, 190, 201));
+}
+.border-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -12px;
+    background: black;
+    border-radius: inherit;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+    0% {
+        clip-path: inset(0px, 0px, 217px, 0px);
+    }
+    25% {
+        clip-path: inset(0px, 0px, 0px, 217px);
+    }
+    50% {
+        clip-path: inset(215px, 0px, 0px, 0px);
+    }
+    75% {
+        clip-path: inset(0px, 217px, 0, 0);
+    }
+}

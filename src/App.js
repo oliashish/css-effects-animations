@@ -6,6 +6,7 @@ import Glassomorphism from "./components/Glassomorphism";
 import Home from "./components/Home";
 import ImageReflection from "./components/ImageReflection";
 import Neuomorphism from "./components/Neuomorphism";
+import RotatingBorders from "./components/RotatingBorders";
 
 function App() {
     return (
@@ -24,6 +25,11 @@ function App() {
                     component={ImageReflection}
                 />
                 <Route exact path="/neuomorphism" component={Neuomorphism} />
+                <Route
+                    exact
+                    path="/rotating borders"
+                    component={RotatingBorders}
+                />
             </Switch>
         </div>
     );
