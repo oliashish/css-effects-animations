@@ -6,6 +6,7 @@ import Glassomorphism from "./components/Glassomorphism";
 import Home from "./components/Home";
 import ImageReflection from "./components/ImageReflection";
 import Neuomorphism from "./components/Neuomorphism";
+import Parallax from "./components/Parallax";
 import RotatingBorders from "./components/RotatingBorders";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
                     path="/rotating borders"
                     component={RotatingBorders}
                 />
+                <Route exact path="/parallax" component={Parallax} />
             </Switch>
         </div>
     );
