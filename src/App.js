@@ -8,6 +8,7 @@ import ImageReflection from "./components/ImageReflection";
 import Neuomorphism from "./components/Neuomorphism";
 import Parallax from "./components/Parallax";
 import RotatingBorders from "./components/RotatingBorders";
+import SmokeEffect from "./components/SmokeEffect";
 
 function App() {
     return (
@@ -32,6 +33,7 @@ function App() {
                     component={RotatingBorders}
                 />
                 <Route exact path="/parallax" component={Parallax} />
+                <Route exact path="/smoke effect" component={SmokeEffect} />
             </Switch>
         </div>
     );
