@@ -1,0 +1,38 @@
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.div1 {
+    background: rgb(4, 19, 90);
+    font-size: 40px;
+    height: 60vh;
+    color: whitesmoke;
+}
+.div2 {
+    background: rgb(245, 231, 38);
+    height: 130vh;
+}
+.div3 {
+    background: rgb(66, 66, 66);
+    height: 0vh;
+}
+.div4 {
+    background: rgb(109, 13, 13);
+}
+.div5 {
+    background: rgb(63, 173, 150);
+    height: 50vh;
+}
+.div6 {
+    background: rgb(255, 0, 0);
+}

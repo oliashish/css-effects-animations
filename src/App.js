@@ -10,6 +10,7 @@ import Neuomorphism from "./components/Neuomorphism";
 import Parallax from "./components/Parallax";
 import RotatingBorders from "./components/RotatingBorders";
 import SmokeEffect from "./components/SmokeEffect";
+import SmootScrolling from "./components/SmoothScrolling";
 
 function App() {
     return (
@@ -36,6 +37,11 @@ function App() {
                 <Route exact path="/parallax" component={Parallax} />
                 <Route exact path="/neon effect" component={NeonLightEffect} />
                 <Route exact path="/smoke effect" component={SmokeEffect} />
+                <Route
+                    exact
+                    path="/smooth scrolling"
+                    component={SmootScrolling}
+                />
             </Switch>
         </div>
     );
