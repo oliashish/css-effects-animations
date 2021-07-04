@@ -7,8 +7,6 @@ const Home = () => {
     const effects = [
         "Glassomorphism",
         "Card Flip",
-        "Controlable Image Transition",
-        "Distortion",
         "Gradient Movement",
         "Neon Effect",
         "Image Reflection",
@@ -16,11 +14,9 @@ const Home = () => {
         "Parallax",
         "Rotating borders",
         "Rotating Image Gallery",
-        "Slice Box Animation",
         "Smoke Effect",
         "Smooth Scrolling",
         "Video Inside Text",
-        "Water wave Effect",
     ];
     return (
         <div className="home">

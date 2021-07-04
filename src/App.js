@@ -11,6 +11,7 @@ import Parallax from "./components/Parallax";
 import RotatingBorders from "./components/RotatingBorders";
 import SmokeEffect from "./components/SmokeEffect";
 import SmootScrolling from "./components/SmoothScrolling";
+import VideoInsideText from "./components/VideoInsideText";
 
 function App() {
     return (
@@ -41,6 +42,11 @@ function App() {
                     exact
                     path="/smooth scrolling"
                     component={SmootScrolling}
+                />
+                <Route
+                    exact
+                    path="/video inside text"
+                    component={VideoInsideText}
                 />
             </Switch>
         </div>
