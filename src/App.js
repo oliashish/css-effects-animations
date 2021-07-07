@@ -3,12 +3,14 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import CardFlip from "./components/CardFlip";
 import Glassomorphism from "./components/Glassomorphism";
+import GradientMovement from "./components/GradientMovement";
 import Home from "./components/Home";
 import ImageReflection from "./components/ImageReflection";
 import NeonLightEffect from "./components/NeonLightEffect";
 import Neuomorphism from "./components/Neuomorphism";
 import Parallax from "./components/Parallax";
 import RotatingBorders from "./components/RotatingBorders";
+import RotatingImageGallery3D from "./components/RotatingImageGallery3D";
 import SmokeEffect from "./components/SmokeEffect";
 import SmootScrolling from "./components/SmoothScrolling";
 import VideoInsideText from "./components/VideoInsideText";
@@ -45,8 +47,19 @@ function App() {
                 />
                 <Route
                     exact
+                    path="/rotating image gallery"
+                    component={RotatingImageGallery3D}
+                />
+
+                <Route
+                    exact
                     path="/video inside text"
                     component={VideoInsideText}
+                />
+                <Route
+                    exact
+                    path="/gradient movement"
+                    component={GradientMovement}
                 />
             </Switch>
         </div>
