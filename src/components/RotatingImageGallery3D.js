@@ -7,23 +7,26 @@ import img6 from "../images/img6.jpeg";
 
 const RotatingImageGallery3D = () => {
     return (
-        <div className="effect-container">
-            <figure>
-                <img src={img1} alt="" />
-            </figure>
-            <figure>
-                <img src={img2} alt="" />
-            </figure>
-            <figure>
-                <img src={img3} alt="" />
-            </figure>
-            <figure>
-                <img src={img4} alt="" />
-            </figure>
-            <figure>
-                <img src={img6} alt="" />
-            </figure>
-        </div>
+        <>
+            <h1>This is not done yet, in going.....</h1>>
+            <div className="gallery-effect-container">
+                <figure>
+                    <img src={img1} alt="" />
+                </figure>
+                <figure>
+                    <img src={img2} alt="" />
+                </figure>
+                <figure>
+                    <img src={img3} alt="" />
+                </figure>
+                <figure>
+                    <img src={img4} alt="" />
+                </figure>
+                <figure>
+                    <img src={img6} alt="" />
+                </figure>
+            </div>
+        </>
     );
 };
 

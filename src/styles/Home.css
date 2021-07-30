@@ -1,3 +1,7 @@
+.home {
+    margin-top: 50px;
+}
+
 .introduction {
     width: 80%;
     margin: auto;
@@ -11,9 +15,12 @@
 
 .image-profile {
     width: 50%;
+    border-radius: 15px;
+    margin-top: 100px;
 }
 .disclaimer-para {
     font-size: 30px;
+    margin-top: 50px;
 }
 .card-container {
     width: 80%;

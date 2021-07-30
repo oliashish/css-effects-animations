@@ -24,7 +24,7 @@
 }
 .div3 {
     background: rgb(66, 66, 66);
-    height: 0vh;
+    height: 70vh;
 }
 .div4 {
     background: rgb(109, 13, 13);
@@ -35,4 +35,5 @@
 }
 .div6 {
     background: rgb(255, 0, 0);
+    height: 50vh;
 }

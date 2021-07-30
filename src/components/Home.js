@@ -35,7 +35,7 @@ const Home = () => {
             <p className="disclaimer-para">
                 Don't judge too quickly, The real effects are waiting in.
             </p>
-            <span>The effects are in progress not completed yet</span>
+
             <div className="card-container">
                 {effects.map((effect) => {
                     return (
