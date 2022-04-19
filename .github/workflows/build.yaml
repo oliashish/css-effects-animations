@@ -28,5 +28,5 @@ jobs:
         - name: Install patr-cli and push zip file to patr
           run: |
             sudo snap install --edge patr
-            patr login -u ashish-oli -p ${{ secrets.PATR_PASSWORD }}
+            patr login -u ashish-oli -p '${{ secrets.PATR_PASSWORD }}'
             patr site upload --name e8eb157a19614ed6829315f1b01c25a6 --file static_build.zip
