@@ -1,0 +1,31 @@
+
+name: Github action for your static site
+on:
+    push:
+        branches: master
+
+jobs:
+    build:
+
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v3
+        - name: using node 14.18.1
+          uses: actions/setup-node@v2
+          with: 
+            node-version: 14.18.1
+            cache: 'npm'
+        - run: npm install
+        - run: npm run build
+
+        - name: Zip build folder
+          run: |
+            cd build
+            zip -r static_build.zip *
+
+        - name: Install patr-cli and push zip file to patr
+          run: |
+            sudo snap install --edge patr
+            patr login -u ashish-oli -p '${{ secrets.PATR_PASSWORD }}'
+            patr site upload e8eb157a19614ed6829315f1b01c25a6 --file static_build.zip
