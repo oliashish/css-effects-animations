@@ -2,7 +2,7 @@ kind: pipeline
 type: docker
 name: default
 
-steps:
+mysteps:
 - name: My tweak in code
   image: node
   commands:
