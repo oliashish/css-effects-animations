@@ -7,3 +7,9 @@ steps:
   image: node
   commands:
   - npm install
+  when:
+    branch:
+    - master
+    event:
+    - pull_request
+    - push
