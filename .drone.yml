@@ -1,7 +1,6 @@
 kind: pipeline
 name: default
-
-mysteps:
+steps:
 - name: My tweak in code
   image: node
   commands:
