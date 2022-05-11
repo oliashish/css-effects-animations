@@ -1,13 +1,9 @@
 kind: pipeline
 name: default
+
 steps:
-- name: My tweak in code
+- name: test
   image: node
   commands:
   - npm install
-  when:
-    branch:
-    - master
-    event:
-    - pull_request
-    - push
+  - npm test
