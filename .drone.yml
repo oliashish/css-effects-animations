@@ -2,8 +2,7 @@ kind: pipeline
 name: default
 
 mysteps:
-- name: test
+- name: testing
   image: node
   commands:
   - npm install
-  - npm test
