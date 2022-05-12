@@ -1,5 +1,5 @@
 kind: pipeline
-name: this is test change from name to hello key
+name: default
 
 mysteps:
 - name: testing with changes
