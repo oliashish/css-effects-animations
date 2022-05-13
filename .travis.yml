@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "14"
+script:
+  - echo "installing packages"
+  - npm install
+  - echo "running build"
+  - npm run build
+  - echo "build success"
+
