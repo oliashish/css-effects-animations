@@ -1,7 +1,7 @@
 kind: pipeline
-myname: default
+name: default
 
-mysteps:
+steps:
 - name: testing with changes
   image: node
   commands:
